@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Web sockets test</title>
+    <script type="text/javascript">
+        var ws = new WebSocket("ws://172.16.113.100:8088");//连接服务器
+        ws.onopen = function(event){
+                        console.log("connect succ");
+                };
+        ws.onmessage = function(event){
+                        console.log("recvFromSever：\r\n"+event.data);
+                };
+        ws.onclose = function(event){
+                        console.log("onclose exec");
+                };
+        ws.onerror = function(event){
+                        console.log("onerror exec");
+              };
+        function send(){
+            var data = Math.random();
+            ws.send(data);
+        }
+    </script>
+</head>
+<body>
+<a href="javascript:;" onclick="send();">发送</a>
+</body>
+</html>
