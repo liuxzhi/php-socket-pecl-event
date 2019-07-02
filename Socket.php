@@ -215,7 +215,21 @@ class Socket
 
     }
 
+    public function test3()
+    {
 
+    }
+
+    public function test4()
+    {
+
+    }
+
+
+    public function test5()
+    {
+
+    }
 
     
 }
