@@ -232,6 +232,16 @@ class Socket
     }
 
 
+    public function test6()
+    {
+
+    }
+
+
+    public function test7()
+    {
+
+    }
 
     
 }
