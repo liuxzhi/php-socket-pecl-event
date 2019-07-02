@@ -195,7 +195,7 @@ class Socket
             self::$connectPools[$fd_key] = $connect;
         }
     }
-    // 关闭链接    
+    // 关闭链接
     protected function disconnect($socket)
     {
         $fd_key = (int)$socket;
@@ -208,6 +208,12 @@ class Socket
 
     }
 
+
+
+    public function test()
+    {
+
+    }
 
 
 
